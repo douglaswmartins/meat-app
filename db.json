@@ -370,5 +370,53 @@
       "restaurantId": "tasty-treats"
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "address": "12345",
+      "number": "12",
+      "optionalAddress": "ap 2",
+      "paymentOptions": "REF",
+      "orderItems": [
+        {
+          "quantity": 2,
+          "menuId": "donut"
+        },
+        {
+          "quantity": 1,
+          "menuId": "cup-cake"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "address": "12345",
+      "number": "12",
+      "optionalAddress": "ap 1",
+      "paymentOptions": "DEB",
+      "orderItems": [
+        {
+          "quantity": 3,
+          "menuId": "cup"
+        },
+        {
+          "quantity": 1,
+          "menuId": "straw"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "address": "54321",
+      "number": "3",
+      "optionalAddress": "ap 5",
+      "paymentOptions": "MON",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "capp"
+        }
+      ],
+      "id": 3
+    }
+  ]
 }
