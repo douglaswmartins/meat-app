@@ -9,6 +9,7 @@ import { InputComponent } from './input/input.component';
 import { ShoppingCartService } from 'app/restaurant-details/shopping-cart/shopping-cart.service';
 import { RestaurantsService } from 'app/restaurants/restaurants.service';
 import { OrderService } from 'app/order/order.service';
+import { SnackbarComponent } from './messages/snackbar/snackbar.component';
 
 @NgModule({
   imports: [
@@ -19,7 +20,8 @@ import { OrderService } from 'app/order/order.service';
   declarations: [
     InputComponent,
     RadioComponent,
-    RatingComponent
+    RatingComponent,
+    SnackbarComponent
   ],
   exports: [
     InputComponent,
@@ -27,6 +29,7 @@ import { OrderService } from 'app/order/order.service';
     RatingComponent,
     CommonModule, 
     FormsModule, 
+    SnackbarComponent,
     ReactiveFormsModule
   ]
 })
