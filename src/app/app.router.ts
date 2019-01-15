@@ -9,6 +9,7 @@ import { MenuComponent } from './restaurant-details/menu/menu.component';
 import { ReviewsComponent } from './restaurant-details/reviews/reviews.component';
 import { OrderComponent } from './order/order.component';
 import { OrderSummaryComponent } from './order-summary/order-summary.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -21,7 +22,8 @@ const appRoutes: Routes = [
   ]},
   {path: 'order', loadChildren: './order/order.module#OrderModule'},
   {path: 'order-summary', component: OrderSummaryComponent},
-  {path: 'about', loadChildren: './about/about.module#AboutModule'}
+  {path: 'about', loadChildren: './about/about.module#AboutModule'},
+  {path: '**', component: NotFoundComponent}
 ]
 @NgModule({
   imports: [
