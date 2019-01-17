@@ -16,13 +16,16 @@ import 'rxjs/add/operator/distinctUntilChanged';
     trigger('toggleSearch',[
       state('hidden', style({
         opacity: 0,
-        "max-height": "0px"
+        "margin-left": "470px",
+        "width": "0px",
+        "float": "left"
       })),
       state('visible', style({
         opacity: 1,
-        "max-height": "70px",
-        "margin-top": "10px",
-        "margin-bottom": "-25px"
+        "margin-left": "0px",
+        "width": "470px",
+        "margin-top": "0px",
+        "margin-bottom": "0px"
       })),
       transition('* => *', animate('500ms 0s ease-in-out'))
     ])

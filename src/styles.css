@@ -265,6 +265,7 @@ body {
 /* barra de busca de restaurantes */
 
 .search-link {
+  padding-right: 0px;
   cursor: pointer;
   color: #555;
 }
@@ -275,5 +276,7 @@ body {
 
 .search-bar {
   opacity: 0;
-  max-height: 0px;
+  width: 0px;
+  margin: 0px;
+  display: inline-block;
 }
