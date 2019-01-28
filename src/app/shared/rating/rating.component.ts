@@ -19,24 +19,24 @@ export class RatingComponent implements OnInit {
   ngOnInit() {
   }
 
-  setRating(r: number) {
+  setRate(r: number){
     this.rate = r
     this.previousRate = undefined
     this.rated.emit(this.rate)
-    console.log(r)
   }
 
-  setTemporaryRate(r: number) {
-    if (this.previousRate === undefined) {
+  setTemporaryRate(r: number){
+    if (this.previousRate === undefined){
       this.previousRate = this.rate
     }
     this.rate = r
   }
 
-  clearTemporaryRate() {
-    if (this.previousRate !== undefined) {
+  clearTemporaryRate(){
+    if (this.previousRate !== undefined){
       this.rate = this.previousRate
       this.previousRate = undefined
     }
   }
+
 }

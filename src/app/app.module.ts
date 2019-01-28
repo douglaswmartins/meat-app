@@ -1,24 +1,27 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, LOCALE_ID } from '@angular/core';
-import { HttpModule } from '@angular/http';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule, PreloadAllModules } from '@angular/router';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms'
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
+import {LocationStrategy, HashLocationStrategy} from '@angular/common'
+
+import {ROUTES} from './app.routes'
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
-import { AppRouterModule } from './app.router';
-
 import { RestaurantsComponent } from './restaurants/restaurants.component';
 import { RestaurantComponent } from './restaurants/restaurant/restaurant.component';
-import { RestaurantDetailsComponent } from './restaurant-details/restaurant-details.component';
-import { MenuComponent } from './restaurant-details/menu/menu.component';
-import { ShoppingCartComponent } from './restaurant-details/shopping-cart/shopping-cart.component';
-import { MenuItemComponent } from './restaurant-details/menu-item/menu-item.component';
-import { ReviewsComponent } from './restaurant-details/reviews/reviews.component';
+import { RestaurantDetailComponent } from './restaurant-detail/restaurant-detail.component';
+import { MenuComponent } from './restaurant-detail/menu/menu.component';
+import { ShoppingCartComponent } from './restaurant-detail/shopping-cart/shopping-cart.component';
+import { MenuItemComponent } from './restaurant-detail/menu-item/menu-item.component';
+import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component';
 
 import { OrderSummaryComponent } from './order-summary/order-summary.component';
 
-import { SharedModule } from './shared/shared.module';
+import {SharedModule} from './shared/shared.module';
 import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
@@ -28,20 +31,20 @@ import { NotFoundComponent } from './not-found/not-found.component';
     HomeComponent,
     RestaurantsComponent,
     RestaurantComponent,
-    RestaurantDetailsComponent,
+    RestaurantDetailComponent,
     MenuComponent,
     ShoppingCartComponent,
     MenuItemComponent,
     ReviewsComponent,
     OrderSummaryComponent,
-    NotFoundComponent    
-  ],
+    NotFoundComponent
+   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    HttpModule,
-    AppRouterModule,
-    SharedModule.forRoot()
+    HttpClientModule,
+    SharedModule.forRoot(),
+    RouterModule.forRoot(ROUTES, {preloadingStrategy: PreloadAllModules})
   ],
   providers: [{provide: LOCALE_ID, useValue: 'pt-BR'}],
   bootstrap: [AppComponent]

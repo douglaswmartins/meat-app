@@ -3,7 +3,7 @@
     {
       "id": "bread-bakery",
       "name": "Bread & Bakery",
-      "category": "Bakery",
+      "category": "Padaria",
       "deliveryEstimate": "25m",
       "rating": 4.9,
       "imagePath": "assets/img/restaurants/breadbakery.png",
@@ -23,7 +23,7 @@
     {
       "id": "coffee-corner",
       "name": "Coffee Corner",
-      "category": "Coffee Shop",
+      "category": "Cafeteria",
       "deliveryEstimate": "30-40m",
       "rating": 4.8,
       "imagePath": "assets/img/restaurants/coffeecorner.png",
@@ -43,7 +43,7 @@
     {
       "id": "ice-cream",
       "name": "Ice Cream",
-      "category": "Ice Creams",
+      "category": "Sorvetes",
       "deliveryEstimate": "40-65m",
       "rating": 4.5,
       "imagePath": "assets/img/restaurants/icy.png",
@@ -211,7 +211,7 @@
     {
       "name": "Julia",
       "date": "2017-01-23T18:25:43",
-      "rating": 4,
+      "rating": 4.5,
       "comments": "Tudo muito bom, entrega no tempo certo",
       "restaurantId": "bread-bakery"
     },
@@ -253,28 +253,28 @@
     {
       "name": "Suzana",
       "date": "2016-12-12T18:25:43",
-      "rating": 3,
+      "rating": 3.5,
       "comments": "Meu sanduíche chegou frio e todo desmontado =\\",
       "restaurantId": "burger-house"
     },
     {
       "name": "Eric",
       "date": "2017-01-23T18:25:43",
-      "rating": 4,
+      "rating": 4.5,
       "comments": "Excelente opção! Recomendo!",
       "restaurantId": "coffee-corner"
     },
     {
       "name": "Amanda",
       "date": "2017-02-02T18:25:43",
-      "rating": 2,
+      "rating": 2.5,
       "comments": "Demorou muito e o café veio gelado",
       "restaurantId": "coffee-corner"
     },
     {
       "name": "Carla",
       "date": "2016-12-12T18:25:43",
-      "rating": 4,
+      "rating": 4.8,
       "comments": "Tudo perfeito. Entrega, embalagem, comida. Resultado? Melhor custo beneficio",
       "restaurantId": "coffee-corner"
     },
@@ -288,7 +288,7 @@
     {
       "name": "André",
       "date": "2016-12-12T18:25:43",
-      "rating": 4,
+      "rating": 4.5,
       "comments": "Excelente como sempre!",
       "restaurantId": "coffee-corner"
     },
@@ -302,7 +302,7 @@
     {
       "name": "Marcelo",
       "date": "2017-02-02T18:25:43",
-      "rating": 4,
+      "rating": 4.5,
       "comments": "Chegou muito rápido, antes mesmo da previsão",
       "restaurantId": "green-food"
     },
@@ -316,14 +316,14 @@
     {
       "name": "Lucas",
       "date": "2017-02-02T18:25:43",
-      "rating": 2,
+      "rating": 2.5,
       "comments": "Esperar 1:45hr pra receber o pedido é INACEITÁVEL",
       "restaurantId": "ice-cream"
     },
     {
       "name": "Jacira",
       "date": "2017-02-01T18:25:43",
-      "rating": 4,
+      "rating": 4.5,
       "comments": "Veio OK!",
       "restaurantId": "ice-cream"
     },
@@ -337,14 +337,14 @@
     {
       "name": "Larissa",
       "date": "2017-02-02T18:25:43",
-      "rating": 2,
+      "rating": 2.5,
       "comments": "A taxa de entrega poderia ser mais barata.",
       "restaurantId": "tasty-treats"
     },
     {
       "name": "Jarbas",
       "date": "2016-12-15T18:25:43",
-      "rating": 4,
+      "rating": 4.7,
       "comments": "Excelente e chegou muito rápido!",
       "restaurantId": "tasty-treats"
     },
@@ -358,224 +358,17 @@
     {
       "name": "Julia",
       "date": "2016-12-12T18:25:43",
-      "rating": 1,
+      "rating": 1.5,
       "comments": "Sempre gostei muito dos pedidos que eu fiz, mas dessa vez foi péssimo e decepcionou muito. Demorou 30min a mais pra chegar do que o tempo máximo esperado.",
       "restaurantId": "tasty-treats"
     },
     {
       "name": "Marília",
       "date": "2016-12-20T18:25:43",
-      "rating": 4,
+      "rating": 4.5,
       "comments": "Taxa de entrega bastante elevada e precisa colocar no app se a pessoa quer porção adicional de algo (calda, crocante etc)",
       "restaurantId": "tasty-treats"
     }
   ],
-  "orders": [
-    {
-      "address": "12345",
-      "number": "12",
-      "optionalAddress": "ap 2",
-      "paymentOptions": "REF",
-      "orderItems": [
-        {
-          "quantity": 2,
-          "menuId": "donut"
-        },
-        {
-          "quantity": 1,
-          "menuId": "cup-cake"
-        }
-      ],
-      "id": 1
-    },
-    {
-      "address": "12345",
-      "number": "12",
-      "optionalAddress": "ap 1",
-      "paymentOptions": "DEB",
-      "orderItems": [
-        {
-          "quantity": 3,
-          "menuId": "cup"
-        },
-        {
-          "quantity": 1,
-          "menuId": "straw"
-        }
-      ],
-      "id": 2
-    },
-    {
-      "address": "54321",
-      "number": "3",
-      "optionalAddress": "ap 5",
-      "paymentOptions": "MON",
-      "orderItems": [
-        {
-          "quantity": 1,
-          "menuId": "capp"
-        }
-      ],
-      "id": 3
-    },
-    {
-      "address": "13565546",
-      "number": "112",
-      "optionalAddress": "ads",
-      "paymentOptions": "DEB",
-      "orderItems": [
-        {
-          "quantity": 3,
-          "menuId": "capp"
-        }
-      ],
-      "id": 4
-    },
-    {
-      "address": "11325",
-      "number": "2",
-      "optionalAddress": "3",
-      "paymentOptions": "MON",
-      "orderItems": [
-        {
-          "quantity": 1,
-          "menuId": "sunday"
-        }
-      ],
-      "id": 5
-    },
-    {
-      "address": "12345",
-      "number": "1",
-      "optionalAddress": "1",
-      "paymentOptions": "MON",
-      "orderItems": [
-        {
-          "quantity": 3,
-          "menuId": "cup-cake"
-        }
-      ],
-      "id": 6
-    },
-    {
-      "name": "",
-      "email": "",
-      "emailConfirmation": "",
-      "address": "",
-      "number": "",
-      "optionalAddress": "",
-      "paymentOptions": "",
-      "orderItems": [
-        {
-          "quantity": 1,
-          "menuId": "cup-cake"
-        }
-      ],
-      "id": 7
-    },
-    {
-      "name": "douglas",
-      "email": "teste@teste",
-      "emailConfirmation": "teste@teste",
-      "address": "12345",
-      "number": "1",
-      "optionalAddress": "",
-      "paymentOption": "MON",
-      "orderItems": [
-        {
-          "quantity": 1,
-          "menuId": "espreso"
-        }
-      ],
-      "id": 8
-    },
-    {
-      "name": "douglas",
-      "email": "t@t.com",
-      "emailConfirmation": "t@t.com",
-      "address": "rua curitibanos",
-      "number": "354",
-      "optionalAddress": "casa fundos",
-      "paymentOption": "DEB",
-      "orderItems": [
-        {
-          "quantity": 2,
-          "menuId": "capp"
-        }
-      ],
-      "id": 9
-    },
-    {
-      "name": "douglas",
-      "email": "t@t",
-      "emailConfirmation": "t@t",
-      "address": "12345",
-      "number": "1",
-      "optionalAddress": "",
-      "paymentOption": "DEB",
-      "orderItems": [
-        {
-          "quantity": 1,
-          "menuId": "cup-cake"
-        },
-        {
-          "quantity": 1,
-          "menuId": "donut"
-        }
-      ],
-      "id": 10
-    },
-    {
-      "name": "douglas",
-      "email": "t@t",
-      "emailConfirmation": "t@t",
-      "address": "12345",
-      "number": "1",
-      "optionalAddress": "",
-      "paymentOption": "MON",
-      "orderItems": [
-        {
-          "quantity": 1,
-          "menuId": "cup-cake"
-        }
-      ],
-      "id": 11
-    },
-    {
-      "name": "Douglas",
-      "email": "t@t",
-      "emailConfirmation": "t@t",
-      "address": "rua curitibanos",
-      "number": "534",
-      "optionalAddress": "",
-      "paymentOption": "MON",
-      "orderItems": [
-        {
-          "quantity": 2,
-          "menuId": "capp"
-        },
-        {
-          "quantity": 1,
-          "menuId": "starb"
-        }
-      ],
-      "id": 12
-    },
-    {
-      "name": "douglas",
-      "email": "t@t",
-      "emailConfirmation": "t@t",
-      "address": "rua curitibanos",
-      "number": "534",
-      "optionalAddress": "",
-      "paymentOption": "DEB",
-      "orderItems": [
-        {
-          "quantity": 1,
-          "menuId": "capp"
-        }
-      ],
-      "id": 13
-    }
-  ]
+  "orders": []
 }

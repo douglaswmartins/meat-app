@@ -8,7 +8,7 @@ export class OrderSummaryComponent implements OnInit {
 
   rated: boolean
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
   }

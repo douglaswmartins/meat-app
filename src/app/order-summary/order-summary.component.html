@@ -1,5 +1,5 @@
 <!-- INICIO DO CONTEUDO -->
-<section class="content-header">
+  <section class="content-header">
   </section>
 
   <section class="content">
@@ -8,7 +8,9 @@
       <p>Seu pedido foi recebido pelo restaurante. Prepare a mesa que a comida está chegando!</p>
       <p><b>Avalie</b> sua experiência:</p>
       <p><mt-rating (rated)="rate()"></mt-rating></p>
-      <h3 *ngIf="rated">Obrigado pela sua avaliação!</h3>
+      <p *ngIf="rated">
+        Obrigado pela sua avaliação!
+      </p>
     </div>
 
   </section>

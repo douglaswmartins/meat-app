@@ -1,52 +1,47 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core'
 
-import { Http, Headers, RequestOptions } from '@angular/http';
-import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/operator/map';
+import {HttpClient} from '@angular/common/http'
+import {Observable} from 'rxjs/Observable'
+import 'rxjs/add/operator/map'
 
-import { ShoppingCartService } from './../restaurant-details/shopping-cart/shopping-cart.service';
+import {ShoppingCartService} from '../restaurant-detail/shopping-cart/shopping-cart.service'
+import {CartItem} from '../restaurant-detail/shopping-cart/cart-item.model'
+ 
 
-import { CartItem } from './../restaurant-details/shopping-cart/cart-item.model';
-import { Order, OrderItem } from './order.model';
-
-import { MEAT_API } from './../app.api';
+import {MEAT_API} from '../app.api'
+import { Order } from './order.model';
 
 @Injectable()
 export class OrderService {
 
-  constructor(private cartService: ShoppingCartService, private http: Http) { }
+  constructor(private cartService: ShoppingCartService, private http: HttpClient){}
 
-  cartItems(): CartItem[] {
-    return this.cartService.items
-  }
-
-  itemsValue() {
+  itemsValue(): number {
     return this.cartService.total()
   }
 
-  increaseQty(item: CartItem) {
+  cartItems(): CartItem[]{
+    return this.cartService.items
+  }
+
+  increaseQty(item: CartItem){
     this.cartService.increaseQty(item)
   }
 
-  decreaseQty(item: CartItem) {
+  decreaseQty(item: CartItem){
     this.cartService.decreaseQty(item)
   }
 
-  remove(item: CartItem) {
+  remove(item: CartItem){
     this.cartService.removeItem(item)
   }
 
-  clear() {
+  clear(){
     this.cartService.clear()
   }
 
   checkOrder(order: Order): Observable<string> {
-    const headers = new Headers()
-    headers.append('Content-Type', 'application/json')
-    return this.http.post(`${MEAT_API}/orders`, 
-                          JSON.stringify(order),
-                          new RequestOptions({headers: headers}))
-                    .map(response => response.json())
-                    .map(order => order.id)
+    return this.http.post<Order>(`${MEAT_API}/orders`, order).map(order => order.id)
   }
+
 }
