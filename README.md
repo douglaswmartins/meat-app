@@ -4,6 +4,10 @@ Este respositório contém a implementação da aplicação feita no curso de An
 
 [aqui]: https://github.com/cod3rcursos/meat-app-starter
 
+# Clone do projeto
+
+`git clone https://github.com/douglaswmartins/meat-app.git`
+
 ## 1. Passos para começar
 
 ### Instalando as Dependências
