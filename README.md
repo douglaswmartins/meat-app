@@ -39,3 +39,9 @@ Expressões regulares usadas na validação de formulários
 ### Number Regex
 
 `/^[0-9]*$/`
+
+### Parte de desenvolvimento da segurança do backend
+
+Tive que utilizar o: `tsc -w` pra transfomar .ts em .js
+
+para inicializar o json: `nodemon backend --watch backend/dist/server`
