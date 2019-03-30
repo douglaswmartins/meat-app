@@ -13,9 +13,7 @@
     "target": "es5",
     "module": "es2015",
     "baseUrl": "",
-    "types": [
-      "jquery"
-    ],
+    "types": [],
     "typeRoots": [
       "../node_modules/@types"
     ]

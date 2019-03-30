@@ -1,12 +1,8 @@
 # Meat - Angular Application
 
-Este respositório contém a implementação da aplicação feita no curso de Angular. O bundle para começar o seu projeto está [aqui].
+### Clone do projeto
 
-[aqui]: https://github.com/cod3rcursos/meat-app-starter
-
-# Clone do projeto
-
-`git clone https://github.com/douglaswmartins/meat-app.git`
+git clone https://github.com/douglaswmartins/meat-app.git
 
 ## 1. Passos para começar
 
@@ -27,21 +23,3 @@ Este respositório contém a implementação da aplicação feita no curso de An
 ### Iniciando o serviço (raiz da aplicação)
 
 `json-server db.json`
-
-## Goodies
-
-Expressões regulares usadas na validação de formulários
-
-### Email Regex
-
-`/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i`
-
-### Number Regex
-
-`/^[0-9]*$/`
-
-### Parte de desenvolvimento da segurança do backend
-
-Tive que utilizar o: `tsc -w` pra transfomar .ts em .js
-
-para inicializar o json: `nodemon backend --watch backend/dist/server`
