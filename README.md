@@ -1,10 +1,6 @@
 # Meat - Angular Application
 
-### Clone do projeto
-
-git clone https://github.com/douglaswmartins/meat-app.git
-
-## 1. Passos para começar
+Projeto desenvolvido como exemplo do Construindo Aplicações Web Com o Novo Angular (4, 5 e 6), disponibilizado na Udemy.com
 
 ### Instalando as Dependências
 
@@ -13,13 +9,3 @@ git clone https://github.com/douglaswmartins/meat-app.git
 ### Inicializando o Servidor
 
 `ng serve` ou `npm start`
-
-## 2. Iniciando o Backend
-
-### Instalando o json-server
-
-`npm install -g json-server`
-
-### Iniciando o serviço (raiz da aplicação)
-
-`json-server db.json`
