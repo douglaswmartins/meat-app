@@ -1,6 +1,6 @@
 # Meat - Angular Application
 
-## Projeto desenvolvido como exemplo do curso "Construindo Aplicações Web Com o Novo Angular (4, 5 e 6)", disponibilizado na Udemy.com
+## Projeto desenvolvido como exemplo do curso "Construindo Aplicações Web Com o Novo Angular (4, 5 e 6)", disponibilizado na [Udemy](https://www.udemy.com/)
 
 ### Clone do projeto
 
