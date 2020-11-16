@@ -11,6 +11,7 @@ git clone <https://github.com/douglaswmartins/meat-app.git>
 ### Instalando as Dependências
 
 `npm install`
+
 `npm install -g json-server`
 
 ### Iniciando o BACKEND
