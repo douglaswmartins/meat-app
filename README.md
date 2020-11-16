@@ -11,17 +11,12 @@ git clone <https://github.com/douglaswmartins/meat-app.git>
 ### Instalando as Dependências
 
 `npm install`
-
-### Inicializando o Servidor
-
-`ng serve` ou `npm start`
-
-## 2. Iniciando o Backend :exclamation: MANUTENÇÃO :exclamation:
-
-### Instalando o json-server
-
 `npm install -g json-server`
 
-### Iniciando o serviço (raiz da aplicação)
+### Iniciando o BACKEND
 
 `json-server db.json`
+
+### Inicializando o FRONTEND
+
+`ng serve` ou `npm start`
