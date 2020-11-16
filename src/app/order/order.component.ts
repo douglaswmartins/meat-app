@@ -76,15 +76,14 @@ export class OrderComponent implements OnInit {
     this.orderService.remove(item)
   }
 
-  checkOrder(order: Order){
-    order.orderItems = this.cartItems()
-      .map((item:CartItem)=>new OrderItem(item.quantity, item.menuItem.id))
-    this.orderService.checkOrder(order)
-      .subscribe( (orderId: string) => {
-        this.router.navigate(['/order-summary'])
-        this.orderService.clear()
-    })
-    console.log(order)
+  async checkOrder(order: Order) {
+    order.orderItems = this.cartItems().map((item:CartItem )=> new OrderItem(item.quantity, item.menuItem.id))
+
+    await this.orderService.checkOrder(order)
+      
+    this.router.navigate(['/order-summary'])
+
+    this.orderService.clear()
   }
 
 }

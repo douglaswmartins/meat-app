@@ -10,14 +10,13 @@ import {Observable} from 'rxjs/Observable'
 })
 export class ReviewsComponent implements OnInit {
 
-  reviews: Observable<any>
+  reviews: any
 
   constructor(private restaurantsService: RestaurantsService,
               private route: ActivatedRoute) { }
 
-  ngOnInit() {
-    this.reviews = this.restaurantsService
-      .reviewsOfRestaurant(this.route.parent.snapshot.params['id'])
+  async ngOnInit() {
+    this.reviews = await this.restaurantsService.reviewsOfRestaurant(this.route.parent.snapshot.params['id'])
   }
 
 }

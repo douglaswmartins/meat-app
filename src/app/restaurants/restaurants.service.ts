@@ -1,7 +1,5 @@
 import {Injectable} from '@angular/core'
-import {Http} from '@angular/http'
 
-import {Observable} from 'rxjs/Observable'
 import 'rxjs/add/operator/map'
 import 'rxjs/add/operator/catch'
 
@@ -10,34 +8,31 @@ import {MenuItem} from '../restaurant-detail/menu-item/menu-item.model'
 
 import {MEAT_API} from '../app.api'
 import {ErrorHandler} from '../app.error-handler'
+import { HttpClient } from '@angular/common/http'
 
 @Injectable()
 export class RestaurantsService {
 
-    constructor(private http: Http){}
+    constructor(private httpClient: HttpClient){}
 
-    restaurants(search?: string): Observable<Restaurant[]> {
-      return this.http.get(`${MEAT_API}/restaurants`, {params: {q: search}})
-        .map(response => response.json())
-        .catch(ErrorHandler.handleError)
+    restaurants(search?: string): Promise<Restaurant[]> {      
+      return this.httpClient.get(`${MEAT_API}/restaurants`, search && {params: {q: search }})
+        .catch(ErrorHandler.handleError).toPromise()
     }
 
-    restaurantById(id: string): Observable<Restaurant>{
-      return this.http.get(`${MEAT_API}/restaurants/${id}`)
-        .map(response => response.json())
-        .catch(ErrorHandler.handleError)
+    restaurantById(id: string): Promise<Restaurant>{
+      return this.httpClient.get(`${MEAT_API}/restaurants/${id}`)
+        .catch(ErrorHandler.handleError).toPromise()
     }
 
-    reviewsOfRestaurant(id: string): Observable<any>{
-      return this.http.get(`${MEAT_API}/restaurants/${id}/reviews`)
-        .map(response => response.json())
-        .catch(ErrorHandler.handleError)
+    reviewsOfRestaurant(id: string): Promise<any>{
+      return this.httpClient.get(`${MEAT_API}/restaurants/${id}/reviews`)
+        .catch(ErrorHandler.handleError).toPromise()
     }
 
-    menuOfRestaurant(id: string): Observable<MenuItem[]>{
-      return this.http.get(`${MEAT_API}/restaurants/${id}/menu`)
-        .map(response => response.json())
-        .catch(ErrorHandler.handleError)
+    menuOfRestaurant(id: string): Promise<MenuItem[]>{
+      return this.httpClient.get<MenuItem[]>(`${MEAT_API}/restaurants/${id}/menu`)
+        .catch(ErrorHandler.handleError).toPromise()
     }
 
 }

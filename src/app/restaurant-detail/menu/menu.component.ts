@@ -12,14 +12,13 @@ import {Observable} from 'rxjs/Observable'
 })
 export class MenuComponent implements OnInit {
 
-  menu: Observable<MenuItem[]>
+  menu: MenuItem[]
 
   constructor(private restaurantsService: RestaurantsService,
               private route: ActivatedRoute) { }
 
-  ngOnInit() {
-    this.menu = this.restaurantsService
-      .menuOfRestaurant(this.route.parent.snapshot.params['id'])
+  async ngOnInit() {
+    this.menu = await this.restaurantsService.menuOfRestaurant(this.route.parent.snapshot.params['id'])
   }
 
   addMenuItem(item: MenuItem){
