@@ -47,7 +47,7 @@ registerLocaleData(localePt);
     BrowserAnimationsModule,
     HttpClientModule,
     SharedModule.forRoot(),
-    RouterModule.forRoot(ROUTES, { preloadingStrategy: PreloadAllModules })
+    RouterModule.forRoot(ROUTES, { preloadingStrategy: PreloadAllModules, relativeLinkResolution: 'legacy' })
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'pt-BR'},
