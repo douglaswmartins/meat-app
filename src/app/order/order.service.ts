@@ -1,8 +1,6 @@
 import {Injectable} from '@angular/core'
 
 import { HttpClient, HttpHeaders } from '@angular/common/http'
-import {Observable} from 'rxjs/Observable'
-import 'rxjs/add/operator/map'
 
 import {ShoppingCartService} from '../restaurant-detail/shopping-cart/shopping-cart.service'
 import {CartItem} from '../restaurant-detail/shopping-cart/cart-item.model'
@@ -22,15 +20,15 @@ export class OrderService {
     return this.cartService.total()
   }
 
-  cartItems(): CartItem[]{
+  cartItems(): CartItem[] {
     return this.cartService.items
   }
 
-  increaseQty(item: CartItem){
+  increaseQty(item: CartItem) {
     this.cartService.increaseQty(item)
   }
 
-  decreaseQty(item: CartItem){
+  decreaseQty(item: CartItem) {
     this.cartService.decreaseQty(item)
   }
 
@@ -38,7 +36,7 @@ export class OrderService {
     this.cartService.removeItem(item)
   }
 
-  clear(){
+  clear() {
     this.cartService.clear()
   }
 
@@ -46,10 +44,7 @@ export class OrderService {
     const headers = new HttpHeaders()
     headers.append('Content-Type', 'application/json')
 
-    return this.httpClient.post(
-        `${MEAT_API}/orders`, JSON.stringify(order),
-        {headers: headers}
-      ).toPromise()
+    return this.httpClient.post(`${MEAT_API}/orders`, JSON.stringify(order), {headers: headers}).toPromise()
   }
 
 }
