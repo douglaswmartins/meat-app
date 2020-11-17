@@ -4,9 +4,12 @@
   Meat App
 </h1>
 
-![Alt ou título da imagem](https://raw.githubusercontent.com/douglaswmartins/meat-app/master/.github/1.png)
+<p align="center">
+  ![Imagem lista de restaurantes](https://raw.githubusercontent.com/douglaswmartins/meat-app/master/.github/1.png)
 
-![Alt ou título da imagem](https://raw.githubusercontent.com/douglaswmartins/meat-app/master/.github/2.png)
+<p align="center">
+  ![Imagem detalhe do restaurante](https://raw.githubusercontent.com/douglaswmartins/meat-app/master/.github/2.png)
+</p>
 
 ---
 
