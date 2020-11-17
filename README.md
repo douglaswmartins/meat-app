@@ -5,10 +5,11 @@
 </h1>
 
 <p align="center">
-  ![Imagem lista de restaurantes](https://raw.githubusercontent.com/douglaswmartins/meat-app/master/.github/1.png)
+  <img width="695" height="420" src="https://raw.githubusercontent.com/douglaswmartins/meat-app/master/.github/1.png" alt="Imagem lista de restaurantes">
+</p>
 
 <p align="center">
-  ![Imagem detalhe do restaurante](https://raw.githubusercontent.com/douglaswmartins/meat-app/master/.github/2.png)
+  <img width="695" height="421" src="https://raw.githubusercontent.com/douglaswmartins/meat-app/master/.github/1.png" alt="Imagem detalhe do restaurante">
 </p>
 
 ---
