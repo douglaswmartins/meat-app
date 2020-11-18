@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <img width="695" height="421" src="https://raw.githubusercontent.com/douglaswmartins/meat-app/master/.github/1.png" alt="Imagem detalhe do restaurante">
+  <img width="695" height="421" src="https://raw.githubusercontent.com/douglaswmartins/meat-app/master/.github/2.png" alt="Imagem detalhe do restaurante">
 </p>
 
 ---
