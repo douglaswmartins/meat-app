@@ -5,11 +5,11 @@
 </h1>
 
 <p align="center">
-  <img width="695" height="420" src="https://raw.githubusercontent.com/douglaswmartins/meat-app/master/.github/1.png" alt="Imagem lista de restaurantes">
+  <img width="695" height="380" src="https://raw.githubusercontent.com/douglaswmartins/meat-app/master/.github/1.png" alt="Imagem lista de restaurantes">
 </p>
 
 <p align="center">
-  <img width="695" height="421" src="https://raw.githubusercontent.com/douglaswmartins/meat-app/master/.github/2.png" alt="Imagem detalhe do restaurante">
+  <img width="695" height="380" src="https://raw.githubusercontent.com/douglaswmartins/meat-app/master/.github/2.png" alt="Imagem detalhe do restaurante">
 </p>
 
 ---
