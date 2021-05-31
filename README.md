@@ -14,6 +14,12 @@
 
 ---
 
+## 📱 Demo
+
+A aplicação poderá ser acessada pelo link: https://meat-app-json-server.herokuapp.com/
+
+---
+
 ## :computer: Sobre Projeto
 
 #### Projeto desenvolvido como exemplo do curso [Construindo Aplicações Web Com o Novo Angular (4, 5 e 6)](https://www.udemy.com/course/angular-pt/), disponibilizado na [Udemy](https://www.udemy.com/), a idéia da aplicação é ser uma single-page application (SPA) inspirada no iFood e usando os Recursos do Angular
