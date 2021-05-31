@@ -14,7 +14,7 @@
 
 ---
 
-## 📱 Demo
+## :iphone: Demo
 
 A aplicação poderá ser acessada pelo link: https://meat-app-json-server.herokuapp.com/
 
