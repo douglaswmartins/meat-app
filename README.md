@@ -16,7 +16,7 @@
 
 ## :iphone: Demo
 
-A aplicação poderá ser acessada pelo link: https://meat-app-json-server.herokuapp.com/
+A aplicação poderá ser acessada pelo link: https://meat-app-doug.netlify.app/
 
 ---
 
